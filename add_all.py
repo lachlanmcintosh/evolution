@@ -9,6 +9,7 @@ def git_add_files():
     directories = [dir for dir in os.listdir(cwd)
                    if os.path.isdir(os.path.join(cwd, dir)) and
                    not os.path.islink(os.path.join(cwd, dir)) and
+                   not dir.startswith('.') and
                    dir not in ['temp_nix_store', 'environments']]
 
     # Add directories to the list
@@ -16,7 +17,7 @@ def git_add_files():
 
     for directory in directories:
         # Get a list of all files in the current directory
-        files_in_dir = [os.path.join(cwd, directory, f) for f in os.listdir(os.path.join(cwd, directory)) if os.path.isfile(os.path.join(cwd, directory, f))]
+        files_in_dir = [os.path.join(cwd, directory, f) for f in os.listdir(os.path.join(cwd, directory)) if os.path.isfile(os.path.join(cwd, directory, f)) and not f.startswith('.')]
 
         # Add each file to the Git repository
         for file_name in files_in_dir:
