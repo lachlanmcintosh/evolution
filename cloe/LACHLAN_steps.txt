@@ -8,3 +8,4 @@ conda activate cloe
 # then wrote install_cloe.R and ran it:
 Rscript install_cloe.R
 
+Installation of Cloe package in R fails due to outdated glibc version (2.17) in our Linux environment. The required package 'gert', a dependency of 'devtools', fails to install as it needs a function 'getentropy' not available in our glibc version. We need to update our glibc to a version that supports 'getentropy' to resolve this issue. However, as non-admin users, we can't upgrade glibc in the current Conda environment.

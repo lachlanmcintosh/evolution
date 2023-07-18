@@ -6,3 +6,5 @@ gh repo clone viq854/lichee
 no environment required for this, it runs in java
 
 wrote lichee_tests.py to test its ability to run
+
+couldn't get it to run, can return to it later and see why perhaps. It hasn't been updated for 7 years so perhaps it isn't worthwhile 

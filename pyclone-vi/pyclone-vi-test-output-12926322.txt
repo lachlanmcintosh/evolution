@@ -1,0 +1,121 @@
+
+Samples: R1 R2 R3
+Num mutations: 2440
+Performing restart 0
+Setting annealing factor to : 1.0
+
+Iteration: 0
+ELBO: -354144.82464736345
+Number of clusters used: 40
+
+Fitting completed
+ELBO: -17682.159578866947
+Number of clusters used: 7
+
+Performing restart 1
+Setting annealing factor to : 1.0
+
+Iteration: 0
+ELBO: -373967.904297767
+Number of clusters used: 40
+
+Fitting completed
+ELBO: -17472.130415766143
+Number of clusters used: 7
+
+Performing restart 2
+Setting annealing factor to : 1.0
+
+Iteration: 0
+ELBO: -432476.24891427514
+Number of clusters used: 40
+
+Fitting completed
+ELBO: -17481.149430689322
+Number of clusters used: 8
+
+Performing restart 3
+Setting annealing factor to : 1.0
+
+Iteration: 0
+ELBO: -331294.74579750776
+Number of clusters used: 40
+
+Fitting completed
+ELBO: -17486.91649032607
+Number of clusters used: 8
+
+Performing restart 4
+Setting annealing factor to : 1.0
+
+Iteration: 0
+ELBO: -486009.0755523791
+Number of clusters used: 40
+
+Fitting completed
+ELBO: -17607.655002698513
+Number of clusters used: 6
+
+Performing restart 5
+Setting annealing factor to : 1.0
+
+Iteration: 0
+ELBO: -1960110.4358855684
+Number of clusters used: 40
+
+Fitting completed
+ELBO: -17600.531241545606
+Number of clusters used: 7
+
+Performing restart 6
+Setting annealing factor to : 1.0
+
+Iteration: 0
+ELBO: -1138442.5826498298
+Number of clusters used: 40
+
+Fitting completed
+ELBO: -17476.75622933752
+Number of clusters used: 6
+
+Performing restart 7
+Setting annealing factor to : 1.0
+
+Iteration: 0
+ELBO: -604786.3301101944
+Number of clusters used: 40
+
+Fitting completed
+ELBO: -17476.116532318578
+Number of clusters used: 8
+
+Performing restart 8
+Setting annealing factor to : 1.0
+
+Iteration: 0
+ELBO: -312235.176671202
+Number of clusters used: 40
+
+Fitting completed
+ELBO: -17581.47603387409
+Number of clusters used: 7
+
+Performing restart 9
+Setting annealing factor to : 1.0
+
+Iteration: 0
+ELBO: -629850.2966310836
+Number of clusters used: 40
+
+Fitting completed
+ELBO: -17476.75712527313
+Number of clusters used: 6
+
+All restarts completed
+Final ELBO: -17472.130415766143
+Number of clusters used: 7
+Fitting model to the data...
+Model fitting completed.
+Writing results...
+Results written.
+Test completed successfully!

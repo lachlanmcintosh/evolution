@@ -6,9 +6,15 @@ conda activate phylowgs
 conda install numpy scipy
 conda install -c conda-forge gsl
 conda install -c etetoolkit ete2
+
+conda install -c conda-forge libgfortran
+conda install -c conda-forge libcblas
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/users/allstaff/lmcintosh/mambaforge/pkgs/libgfortran4-7.5.0-h14aa051_20/lib/:/home/users/allstaff/lmcintosh/mambaforge/envs/sage/lib/
+
+cd phylowgs
 g++ -o mh.o -O3 mh.cpp util.cpp `gsl-config --cflags --libs`
 
 # then after installation I ran the test example:
-cd phylowgs
 sbatch  LACHLANS_test_sbatch_script.slurm
 
+which produced sucessful output:"phylowgs_test.out" in phylowgs

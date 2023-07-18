@@ -1,4 +1,3 @@
-
 # Installing required R packages
 requiredPackages <- c(
   "R6",
@@ -11,18 +10,14 @@ requiredPackages <- c(
   "Rcpp",
   "RcppArmadillo",
   "reshape2",
-  "scales"
+  "scales",
+  "devtools"  # Include devtools in the list
 )
 
 for (p in requiredPackages) {
   if (!require(p, character.only=TRUE)) {
-    install.packages(p)
+    install.packages(p, repos = "https://cloud.r-project.org")  # Set the repos argument here
   }
-}
-
-# Installing Cloe from BitBucket
-if (!require(devtools)) {
-  install.packages("devtools")
 }
 
 # The devtools library is required for installing packages from BitBucket
@@ -33,3 +28,4 @@ install_bitbucket("fm361/cloe", dependencies=TRUE)
 
 # Building the vignette (if pandoc is installed)
 install_bitbucket("fm361/cloe", dependencies=TRUE, build_vignettes=TRUE)
+

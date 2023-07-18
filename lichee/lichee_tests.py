@@ -3,7 +3,7 @@ import subprocess
 
 def run_lichee_cmd(lichee_path, input_file_path, output_file_path, options):
     cmd = [
-        lichee_path,
+        lichee_path,  # we're calling the lichee shell script directly
         "-build",
         "-i",
         input_file_path,
@@ -24,9 +24,9 @@ def run_lichee_cmd(lichee_path, input_file_path, output_file_path, options):
     return result.returncode == 0
 
 def test_lichee():
-    lichee_path = "/home/users/allstaff/lmcintosh/evolution/lichee/LICHeE/release/lichee"
-    input_file_path = "/home/users/allstaff/lmcintosh/evolution/lichee/LICHeE/release/data/test.txt" # replace 'test.txt' with your test data file
-    output_file_path = "/home/users/allstaff/lmcintosh/evolution/lichee/LICHeE/release/data/test_output.txt" # the output file will be created here
+    lichee_path = "/home/users/allstaff/lmcintosh/evolution/lichee/lichee/LICHeE/release/lichee"  # updated path
+    input_file_path = "/home/users/allstaff/lmcintosh/evolution/lichee/lichee/LICHeE/release/data/test.txt"  # replace 'test.txt' with your test data file
+    output_file_path = "/home/users/allstaff/lmcintosh/evolution/lichee/lichee/LICHeE/release/data/test_output.txt"  # the output file will be created here
     options = ["-maxVAFAbsent", "0.005", "-minVAFPresent", "0.005", "-n", "0", "-showTree", "1"]
 
     # Test 1: Does the LICHeE command complete successfully?
