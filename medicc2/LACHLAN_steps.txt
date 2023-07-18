@@ -1,5 +1,6 @@
 # paper at
 # https://genomebiology.biomedcentral.com/articles/10.1186/s13059-022-02794-9#availability-of-data-and-materials
+# the latest method from the schwarz lab for phylogenetic inference
 
 # code at 
 # https://bitbucket.org/schwarzlab/medicc2/src/master/

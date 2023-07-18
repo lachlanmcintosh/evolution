@@ -1,0 +1,36 @@
+# Ignore all .pyc files (Python compiled files)
+*.pyc
+
+# Ignore all .log files
+*.log
+
+# Ignore all .tmp files
+*.tmp
+
+# Ignore all directories named __pycache__
+__pycache__/
+
+# Ignore the .idea directory (created by PyCharm and other IntelliJ IDEs)
+.idea/
+
+# Ignore all .DS_Store files (created by macOS)
+.DS_Store
+
+# Ignore all .ipynb_checkpoints directories (created by Jupyter Notebook)
+.ipynb_checkpoints/
+
+# Ignore node modules (created when using Node.js)
+node_modules/
+
+# Ignore dist and build directories (common in Python packages)
+dist/
+build/
+
+# Ignore all .csv, .tsv and .xlsx files (common data file formats)
+*.csv
+*.tsv
+*.xlsx
+
+# Ignore all .err files
+*.err
+

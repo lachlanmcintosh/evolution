@@ -1,0 +1,14 @@
+# code and installation instructions can be found at 
+# https://github.com/raphael-group/machina
+
+conda create -n machina
+conda activate machina
+
+# Set up conda channels for bioconda: (add the channels in the correct order)
+conda config --add channels defaults
+conda config --add channels bioconda
+conda config --add channels conda-forge
+
+
+# Install machina from bioconda:
+conda install machina

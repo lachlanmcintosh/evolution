@@ -1,0 +1,5 @@
+There wasn't a lot of information on how to install this package
+The steps I took to write the package were:
+
+conda install -c conda-forge r-essentials
+wrote: LACHLAN_install_packages.R

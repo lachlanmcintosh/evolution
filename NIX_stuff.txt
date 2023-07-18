@@ -1,0 +1,3 @@
+module load nix
+module load nix && nix copy --from http://nix.wehi.edu.au:5001 /nix/store/2wk74v8apqh873d9psyaymrniskd1qwk-link-outputs
+

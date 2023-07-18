@@ -1,0 +1,7 @@
+git clone https://github.com/Roth-Lab/pyclone-vi.git
+cd pyclone-vi
+conda create -c conda-forge -n pyclone-vi --file requirements.txt --yes
+conda activate pyclone-vi
+pyclone-vi --help
+export PS1='(`basename \"$CONDA_PREFIX\"`) \[\033[01;32m\]\u@\h\[\033[01;34m\] \w $(if [[ $? != 0 ]]; then echo "\[\033[01;31m\]:("; else echo ""; fi)\$ \[\033[00m\] '
+

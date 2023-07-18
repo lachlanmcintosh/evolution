@@ -1,0 +1,14 @@
+ conda create -n hatchet hatchetThe installation procedure described http://compbio.cs.brown.edu/hatchet/README.html#setup in the man pages did not work, 
+These steps allowed for the sucessful installation:
+
+
+conda config --add channels defaults
+conda config --add channels bioconda
+conda config --add channels conda-forge
+
+conda create -n hatchet hatchet
+# up to here
+conda activate hatchet
+conda install hatchet
+conda install -c dranew shapeit
+

@@ -1,0 +1,3 @@
+conda create -n pyclone -c bioconda -c conda-forge pyclone
+
+

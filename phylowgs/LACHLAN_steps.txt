@@ -1,0 +1,14 @@
+# the steps provided in the github for installation didn't work
+# the steps that seemed to work for me are
+
+conda create -n phylowgs python=2.7
+conda activate phylowgs
+conda install numpy scipy
+conda install -c conda-forge gsl
+conda install -c etetoolkit ete2
+g++ -o mh.o -O3 mh.cpp util.cpp `gsl-config --cflags --libs`
+
+# then after installation I ran the test example:
+cd phylowgs
+sbatch  LACHLANS_test_sbatch_script.slurm
+
