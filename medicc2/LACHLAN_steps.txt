@@ -1,0 +1,12 @@
+# paper at
+# https://genomebiology.biomedcentral.com/articles/10.1186/s13059-022-02794-9#availability-of-data-and-materials
+
+# code at 
+# https://bitbucket.org/schwarzlab/medicc2/src/master/
+
+conda create -n medicc2
+conda activate medicc2
+conda install -c bioconda -c conda-forge medicc
+
+# then tested medicc using their software
+
