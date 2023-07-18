@@ -1,0 +1,10 @@
+# https://arxiv.org/pdf/1604.01715.pdf is a link to the paper
+# bitbucket is https://bitbucket.org/fm361/cloe/src/master/  
+
+conda create --name cloe r-essentials
+
+conda activate cloe
+
+# then wrote install_cloe.R and ran it:
+Rscript install_cloe.R
+

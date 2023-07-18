@@ -1,0 +1,8 @@
+# lichee is available at 
+# https://github.com/viq854/lichee
+
+gh repo clone viq854/lichee
+
+no environment required for this, it runs in java
+
+wrote lichee_tests.py to test its ability to run
