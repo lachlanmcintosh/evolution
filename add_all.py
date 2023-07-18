@@ -21,6 +21,7 @@ def git_add_files():
 
         # Add each file to the Git repository
         for file_name in files_in_dir:
+            print(f"Adding file: {file_name}")  # print out the file being added
             subprocess.run(["git", "add", file_name])
 
     # Commit the changes
