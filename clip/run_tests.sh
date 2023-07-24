@@ -14,4 +14,3 @@ conda activate /stornext/Bioinf/data/bioinf-data/Papenfuss_lab/projects/evolutio
 
 # Call the Python script
 python /home/users/allstaff/lmcintosh/evolution/clip/test_clip.py
-
