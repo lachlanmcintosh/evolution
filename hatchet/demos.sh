@@ -1,25 +1,38 @@
 #!/bin/bash
 
-# define path to the hatchet folder
+# Define path to the hatchet folder
 HATCHET_DIR="/home/users/allstaff/lmcintosh/evolution/hatchet/hatchet"
 
-# define array of demo folders
-declare -a DEMO_FOLDERS=("demo-complete" "demo-WES" "demo-WGS-cancer" "demo-WGS-sim")
+# Define path to the tests folder
+TESTS_DIR="$HATCHET_DIR/tests"
 
-# iterate through the demos
-for DEMO in "${DEMO_FOLDERS[@]}"
+# Navigate to tests folder
+cd "$TESTS_DIR"
+
+# Find all Python test scripts in the current folder
+TEST_SCRIPTS=$(find . -name 'test_*.py')
+
+# Iterate through each found test script and execute
+for TEST_SCRIPT in $TEST_SCRIPTS
 do
-    # navigate to demo folder
-    cd "$HATCHET_DIR/examples/$DEMO"
-
-    # find all bash scripts in the current folder
-    SCRIPTS=$(find . -name '*.sh')
-
-    # iterate through each found bash script
-    for SCRIPT in $SCRIPTS
-    do
-        echo "Running script: $SCRIPT"
-        bash "$SCRIPT"
-    done
+    python $TEST_SCRIPT
 done
 
+# Define array of demo folders
+declare -a DEMO_FOLDERS=("demo-complete" "demo-WES" "demo-WGS-cancer" "demo-WGS-sim")
+
+# Iterate through the demos
+for DEMO in "${DEMO_FOLDERS[@]}"
+do
+    # Navigate to demo folder
+    cd "$HATCHET_DIR/examples/$DEMO"
+
+    # Find all bash scripts in the current folder
+    SCRIPTS=$(find . -name '*.sh')
+
+    # Iterate through each found bash script and execute
+    for SCRIPT in $SCRIPTS
+    do
+        bash $SCRIPT
+    done
+done

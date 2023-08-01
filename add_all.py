@@ -10,7 +10,7 @@ def git_add_files():
                    if os.path.isdir(os.path.join(cwd, dir)) and
                    not os.path.islink(os.path.join(cwd, dir)) and
                    not dir.startswith('.') and
-                   dir not in ['temp_nix_store', 'environments']]
+                   dir not in ['temp_nix_store', 'environments', 'nix_copy']]
 
     # Add directories to the list
     directories.append(cwd)  # add the current directory to the list

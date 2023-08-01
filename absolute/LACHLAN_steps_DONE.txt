@@ -1,0 +1,4 @@
+It was hard to find where to install ABSOLUTE from but I found this repo:"https://github.com/ShixiangWang/DoAbsolute"
+the links end up here
+https://github.com/genepattern?q=absolute&type=all&language=&sort=
+which has a deprecated version of ABSOLUTE. It is no longer supported 
